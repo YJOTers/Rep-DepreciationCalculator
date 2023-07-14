@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DepreciationCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                x:Name="lb1page1"
+                x:FieldModifier="Internal"
+                Text="CALCULE LA DEPRECIACIÓN DE SU ACTIVO FIJO"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label
+                x:Name="lb2page1"
+                x:FieldModifier="Internal"
+                Text="DEPRECIACIÓN LINEAL"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry
+                x:Name="inputValorInicial"
+                x:FieldModifier="Internal"
+                Placeholder="Ingrese el valor inicial del activo"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand" />
+
+            <Entry
+                x:Name="inputVidaUtil"
+                x:FieldModifier="Internal"
+                Placeholder="Ingrese la vida util en años del activo"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand" />
+
+            <Button
+                x:Name="btnCalcular"
+                x:FieldModifier="Internal"
+                Text="CALCULAR"
+                SemanticProperties.Hint="Calcula la depreciación lineal del activo fijo"
+                Clicked="OnBtnCalcularClicked"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand" />
+
+            <Label
+                x:Name="lbDepreciacion"
+                x:FieldModifier="Internal"
+                Text="..."
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="CenterAndExpand" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

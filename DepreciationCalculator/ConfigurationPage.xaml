@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DepreciationCalculator.ConfigurationPage">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+                <Label
+                x:Name="lb1page2"
+                Text="Seleccione su idioma"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand" />
+
+                <Button
+                x:Name="btnEspanol"
+                Text="ESPAÑOL"
+                SemanticProperties.Hint="Idioma español"
+                Clicked="OnBtnEspanolClicked"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand" />
+
+                <Button
+                x:Name="btnIngles"
+                Text="INGLES"
+                SemanticProperties.Hint="Idioma ingles"
+                Clicked="OnBtnInglesClicked"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand" />
+
+                <Button
+                x:Name="btnPortuges"
+                Text="PORTUGES"
+                SemanticProperties.Hint="Idioma portuges"
+                Clicked="OnBtnPortugesClicked"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand" />
+
+                <Label
+                x:Name="lb2page2"
+                Text="Cambiar modo de color"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand" />
+
+                <Button
+                x:Name="btnModoDeColor"
+                Text="OSCURO"
+                SemanticProperties.Hint="Color de vista"
+                Clicked="OnBtnModoDeColorClicked"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
